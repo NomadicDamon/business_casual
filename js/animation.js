@@ -16,7 +16,7 @@ window.onscroll = throttle(animatedSectionCheck, 60);
 function animatedSectionCheck(){
     let animatedSection = document.getElementsByClassName('animateme') 
     let scrollPos = window.pageYOffset;
-    let WindowHgt = (window.innerHeight * .9);
+    let WindowHgt = (window.innerHeight * .5);
     for (i = 0; i < animatedSection.length; i++) {
 let elementPos = animatedSection[i].offsetTop;
 if(scrollPos > (elementPos - WindowHgt)) {
