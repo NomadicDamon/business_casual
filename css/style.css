@@ -33,7 +33,7 @@ h2 {
     font-size: clamp(32px,4vw,52px);
     font-family: var(--headerfont);
     margin-bottom: 10px;
-    margin-top: 20px;
+    margin-top: 0px;
 }
 .headertext {
     font-size: clamp(42px,4vw,65px);
