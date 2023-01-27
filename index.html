@@ -7,46 +7,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Business / Casual">
     <title>Business / Casual</title>
-    <link rel="stylesheet" href="css/glider.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
-        <div class="modal" id="vid-one">
-            <div class="modal-bg modal-exit"></div>
-            <div class="modal-container">
-                <button class="modal-close modal-exit">X</button>
-                <iframe class="lazy" style="margin:20px;" width="560" height="315"
-                    data-src="https://www.youtube.com/embed/3Wf29RiKp70" title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
+        <div class="inner">
+            <div class="modal" id="vid-one">
+                <div class="modal-bg modal-exit"></div>
+                <div class="modal-container">
+                    <button class="modal-close modal-exit">X</button>
+                    <iframe class="lazy" style="margin:20px;" width="560" height="315"
+                        data-src="https://www.youtube.com/embed/3Wf29RiKp70" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
             </div>
+            <a ALT="LOGO" href="index.html" class="logo"><img class="lazy" data-src="img/bclogolargew.svg"
+                    alt="BUSINESS/CASUAL" width="290" height="30"></a>
+            <nav id="menu" aria-hidden="true" aria-labelledby="menu-toggle" role="navigation">
+                <img class="lazy navlogo" data-src="img/bclogolarge.svg" width="406" height="46" alt="Business Casual Logo">
+                <span>You bring the spirit — We'll bring the noise</span>
+                <ul style="margin: 60px 0">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#services" onclick="toggleMenu();">Services</a></li>
+                    <li><a href="#projects" onclick="toggleMenu();">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="#" id="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="menu" onclick="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="22.194" viewBox="0 0 40 22.194">
+                    <g id="menuicon" transform="translate(-249.5 -26.75)">
+                        <line id="Line_1" data-name="Line 1" x2="40" transform="translate(249.5 27.5)" fill="none"
+                            stroke="#fff" stroke-width="1.5" />
+                        <line id="Line_2" data-name="Line 2" x2="30" transform="translate(259.5 37.847)" fill="none"
+                            stroke="#fff" stroke-width="1.5" />
+                        <line id="Line_3" data-name="Line 3" x2="20" transform="translate(269.5 48.194)" fill="none"
+                            stroke="#fff" stroke-width="1.5" />
+                    </g>
+                </svg>
+            </a>
         </div>
-        <a ALT="LOGO" href="index.html" class="logo"><img class="lazy" data-src="img/bclogolargew.svg"
-                alt="BUSINESS/CASUAL" width="290" height="30"></a>
-        <nav id="menu" aria-hidden="true" aria-labelledby="menu-toggle" role="navigation">
-            <img class="lazy navlogo" data-src="img/bclogolarge.svg" width="406" height="46" alt="Business Casual Logo">
-            <span>You bring the spirit — We'll bring the noise</span>
-            <ul style="margin: 60px 0">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#services" onclick="toggleMenu();">Services</a></li>
-                <li><a href="#projects" onclick="toggleMenu();">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
-            </ul>
-        </nav>
-        <a href="#" id="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="menu" onclick="">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="22.194" viewBox="0 0 40 22.194">
-                <g id="menuicon" transform="translate(-249.5 -26.75)">
-                    <line id="Line_1" data-name="Line 1" x2="40" transform="translate(249.5 27.5)" fill="none"
-                        stroke="#fff" stroke-width="1.5" />
-                    <line id="Line_2" data-name="Line 2" x2="30" transform="translate(259.5 37.847)" fill="none"
-                        stroke="#fff" stroke-width="1.5" />
-                    <line id="Line_3" data-name="Line 3" x2="20" transform="translate(269.5 48.194)" fill="none"
-                        stroke="#fff" stroke-width="1.5" />
-                </g>
-            </svg>
-        </a>
     </header>
     <main>
         <div class="section hero centered constrained">
@@ -96,8 +97,8 @@
                 </svg>
             </a>
         </div>
-        <div class="section hills ">
-            <div class="padded">
+        <div class="section hills padded">
+            <div class="">
                 <h2>It's nice to meet you</h2>
                 <p>We have one core mission: create <span class="btext">intuitive</span>, <span
                         class="gtext">purposeful</span>, and <span class="otext">impactful</span> experiences that

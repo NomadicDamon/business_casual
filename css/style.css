@@ -383,9 +383,7 @@ a#menu-toggle {
     z-index: 9999;
 }
 #menu-toggle.active {
-    position: fixed;
     right: 10px;
-    transform: translate(-10px,-10px);
     transition: .5s;
 }
 #menu-toggle:focus svg rect ,
@@ -433,7 +431,7 @@ svg {
 }
 .section ul {
     padding-left: 0;
-    margin-top: 0;
+    margin: 40px 0;
     text-align: left;
 }
 ul.two-col-list {
@@ -456,11 +454,13 @@ img {max-width: 100%;height: inherit;}
     background: var(--darkerblue);
 }
 /*header*/
-header {
+header .inner {
+    max-width: var(--constrained-page-width);
+    margin: 0 auto;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    padding: 20px;
+    padding: 20px 4vw;
     align-items: center;
 }
 .socials a {
@@ -523,36 +523,6 @@ h1 span {
     text-align: initial;
 }
 
-/*slider overrides*/
-.glider-slide {
-    margin: 20px 10px 0;
-}
-.glider-controls {
-    display: flex;
-    justify-content: flex-end;
-    text-align: right;
-}
-.glider-dots {
-    margin: 0 20px;
-}
-button.glider-next1,
-button.glider-prev1 {
-    background: transparent;
-    border: 0;
-    width: 20px;
-}
-.glider-dot.active {
-    background: var(--white);
-}
-.glider-dot {
-    display: block;
-    cursor: pointer;
-    border: 1px solid var(--white);
-    border-radius: 999px;
-    background: var(--black);
-    width: 16px;
-    height: 16px;
-}
 
 button.disabled img {
     opacity: .2;
