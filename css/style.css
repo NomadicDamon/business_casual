@@ -24,6 +24,7 @@
 h1,h2,h3,h4,h5,h6 {
     font-weight: 300;
     font-family: var(--headerfont);
+    line-height: 1.2;
 }
 strong {
     font-weight: bold;
@@ -37,7 +38,7 @@ h2 {
 }
 .headertext {
     font-size: clamp(42px,4vw,65px);
-    margin-bottom:50px;
+    margin-bottom:25px;
 }
 h2.sm {
     font-size: clamp(26px,3vw,38px);
@@ -99,9 +100,11 @@ a#playbutton {
     display: block;
 }
 .section li {
-    padding: 10px;
     line-height: 1.6;
     text-align: left;
+    padding: 8px 10px;
+    text-align: center;
+    list-style: none;
 }
 .logocloud {
     display: grid;
@@ -145,6 +148,12 @@ a#playbutton {
 }
 .nopadbottom {
     padding-bottom: 0 !important;
+}
+.xpadtop {
+    padding-top: clamp(60px,8vw,280px) !important;
+}
+.xpadbottom {
+    padding-bottom: clamp(60px,8vw,280px) !important;
 }
 .padded {
     padding-left: 4vw;
@@ -424,14 +433,9 @@ footer nav {
 svg {
     overflow: visible;
 }
-.section li {
-    padding: 4px 10px;
-    text-align: center;
-    list-style: none;
-}
 .section ul {
     padding-left: 0;
-    margin: 40px 0;
+    margin: 20px 0;
     text-align: left;
 }
 ul.two-col-list {
@@ -688,6 +692,9 @@ h3,
 .lato {
     font-family: 'Lato', sans-serif;
 }
+.portfolio a {
+    margin-bottom: 40px;
+}
 /*modal css*/
 .modal {
     position: fixed;
@@ -809,7 +816,6 @@ h3,
 }
 @media(min-width:800px){
     .portfolio.row {
-        min-height: 100vh;
         align-items: center;
     }
     .logocloud {
