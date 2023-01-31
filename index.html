@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <div class="inner" style="max-width: 100%;">
+        <div class="inner">
             <div class="modal" id="vid-one">
                 <div class="modal-bg modal-exit"></div>
                 <div class="modal-container">
@@ -98,7 +98,7 @@
             </a>
         </div>
         <div class="section hills padded xpadbottom">
-            <div class="">
+            <div class="constrained">
                 <h2>It's nice to meet you</h2>
                 <p>We have one core mission: create <span class="btext">intuitive</span>, <span
                         class="gtext">purposeful</span>, and <span class="otext">impactful</span> experiences that
@@ -114,7 +114,7 @@
         </div>
         <div id="services" class="section  black nopadtop">
             <div class="row" style="margin-top: 0">
-                <div class="column nopadtop padded">
+                <div class="column nopadtop padded  constrained">
                         <h2>We're bout it, bout it</h2>
                         <p style="max-width:1200px"><span>Whether you're an early stage start-up building an MVP or a Fortune 500 looking for
                                 support on an enterprise platform, we're ready to step in and support at any stage of
@@ -133,8 +133,8 @@
                 </div>
             </div>
         </div>
-        <div id="projects" class="row reverse portfolio ">
-            <div class="column two"><img alt="add alt text" width="2330" height="1300" src="img/mrgndesktop@2x.jpg"
+        <div id="projects" class="row reverse portfolio">
+            <div class="column"><img alt="add alt text" width="2330" height="1300" src="img/mrgndesktop@2x.jpg"
                     class="mrgn"></div>
             <div class="column jcenter">
                 <h2>MRGN.</h2>
@@ -190,8 +190,12 @@
             </div>
         </div>
         <div id="contact" class="section constrained centered  xpadbottom xpadtop">
-            <h2>Ready to shake things up?</h2>
-            <p>Please submit the form below to connect with us. We’ll reach out to you within 24 hrs.</p>
+            <div class="row" style="margin-bottom: 20px">
+                <div class="column">
+                    <h2>Ready to shake things up?</h2>
+                    <p>Please submit the form below to connect with us. We’ll reach out to you within 24 hrs.</p>
+                </div>
+            </div>
             <form class="contact" action="#" method="POST">
                 <label for="name">Full Name</label>
                 <input type="text" id="name" name="user_name" placeholder="Full Name" />
@@ -203,7 +207,7 @@
                 <input type="text" id="phone" name="user_phone" placeholder="Phone" />
                 <label for="msg">Message:</label>
                 <textarea id="msg" name="user_message" placeholder="Describe your project"></textarea>
-                <button type="submit" class="button blue">Submit</button>
+                <button type="submit" class="button blue" style="padding:10px 80px">Submit</button>
             </form>
         </div>
     </main>
