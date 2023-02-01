@@ -708,6 +708,9 @@ h3,
 .portfolio a {
     margin-bottom: 40px;
 }
+.mrgn-logos { 
+    background-image:url('../img/mrgn-logoback.jpg');
+}
 /*modal css*/
 .modal {
     position: fixed;
@@ -828,6 +831,9 @@ h3,
     }
 }
 @media(min-width:800px){
+    .mrgn-logos { 
+        background-image:url('../img/mrgn_logos.jpg');
+    }
     .portfolio.row {
         align-items: center;
     }
