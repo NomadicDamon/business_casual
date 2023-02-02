@@ -677,6 +677,8 @@ iframe {
 .project-info {
     max-width: 1050px;
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 h3,
 .project-info h2 {
@@ -835,6 +837,10 @@ h3,
     }
 }
 @media(min-width:800px){
+    .project-info {
+        display: flex;
+        flex-direction: row;
+    }
     .mrgn-logos { 
         background-image:url('../img/mrgn_logos.jpg');
     }
