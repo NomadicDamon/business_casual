@@ -371,7 +371,7 @@ nav#menu {
     align-items: center;
     opacity: 0;
     top: 0;
-    left: 0;
+    left: -9999em;
     padding: 90px 0px 100vw;
     color: var(--black);
     border-bottom: 100px #1C1C1C solid;
@@ -390,6 +390,7 @@ nav#menu.active {
     z-index: 999;
     opacity: 1;
     transition: .5s;
+    left: 0;
 }
 a#menu-toggle {
     z-index: 9999;
