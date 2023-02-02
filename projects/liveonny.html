@@ -38,7 +38,7 @@
                     <li><a href="../index.html#contact" onclick="toggleMenu();">Contact</a></li>
                 </ul>
             </nav>
-            <a href="#" id="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="menu" onclick="">
+            <a href="#" id="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="menu" onclick="toggleMenu(); return false;">
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="22.194" viewBox="0 0 40 22.194">
                     <g id="menuicon" transform="translate(-249.5 -26.75)">
                         <line id="Line_1" data-name="Line 1" x2="40" transform="translate(249.5 27.5)" fill="none"
@@ -169,9 +169,6 @@
         var menutoggle = document.querySelector('#menu-toggle');
         var menu = document.querySelector('#menu');
         var body= document.querySelector('body'); 
-        menutoggle.onclick = function () {
-            toggleMenu();
-        }
         function toggleMenu() {
             menutoggle.classList.toggle('active');
             body.classList.toggle('frozen');
