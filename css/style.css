@@ -404,13 +404,11 @@ a#menu-toggle {
     fill: var(--red);
 }
 #menu-toggle.active line:first-child {
-    transform: rotate(45deg) translate(518%, -720%) scalex(82%);
-}
-#menu-toggle.active line:nth-child(2) {
-    transform:  translate(700%,200%) scale(0%);
+    transform: rotate(-45deg) translate(160px, 212px) scale(.76);
 }
 #menu-toggle.active line:last-child {
-    transform: rotate(-45deg) translate(360%, 1000%) scalex(160%);
+    transform: rotate(45deg) translate(200px, -160px);
+    transform-origin: center;
 }
 #menu-toggle.active line {
     stroke: #000 ;
@@ -456,7 +454,7 @@ ul.two-col-list {
 /*basics*/
 img {max-width: 100%;height: inherit;}
 .logo {
-    margin: 20px 0;
+    margin: 10px 0 0;
 }
 .dark {
     background: var(--darkerblue);
